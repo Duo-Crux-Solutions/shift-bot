@@ -6,7 +6,7 @@
 const { Client, GatewayIntentBits, PermissionsBitField, SlashCommandBuilder, REST, Routes } = require('discord.js');
 
 // ─── CONFIG — FILL THESE IN ───────────────────────────────────────────────────
-const TOKEN        = 'YOUR_BOT_TOKEN_HERE';       // From Discord Developer Portal
+const TOKEN = process.env.TOKEN;
 const CLIENT_ID    = 'YOUR_CLIENT_ID_HERE';       // Bot's Application ID
 const GUILD_ID     = 'YOUR_SERVER_ID_HERE';       // Your Discord Server ID
 const OWNER_ID     = 'YOUR_DISCORD_USER_ID';      // Your personal Discord User ID
