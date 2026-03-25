@@ -6,20 +6,18 @@
 const { Client, GatewayIntentBits, PermissionsBitField, SlashCommandBuilder, REST, Routes } = require('discord.js');
 
 // ─── CONFIG — FILL THESE IN ───────────────────────────────────────────────────
-const TOKEN = process.env.TOKEN;
-const CLIENT_ID    = 'YOUR_CLIENT_ID_HERE';       // Bot's Application ID
-const GUILD_ID     = 'YOUR_SERVER_ID_HERE';       // Your Discord Server ID
-const OWNER_ID     = 'YOUR_DISCORD_USER_ID';      // Your personal Discord User ID
+jsconst TOKEN        = process.env.TOKEN;
+const CLIENT_ID    = process.env.CLIENT_ID;
+const GUILD_ID     = process.env.GUILD_ID;
+const OWNER_ID     = process.env.OWNER_ID;
 
-// Paste your exact role IDs from Server Settings → Roles → (right-click → Copy ID)
 const ROLE_IDS = {
-  morning : 'MORNING_ROLE_ID_HERE',
-  evening : 'EVENING_ROLE_ID_HERE',
-  night   : 'NIGHT_ROLE_ID_HERE',
+  morning : process.env.MORNING_ROLE_ID,
+  evening : process.env.EVENING_ROLE_ID,
+  night   : process.env.NIGHT_ROLE_ID,
 };
 
-// Channel ID where bot sends join logs (create a private #bot-logs channel)
-const LOG_CHANNEL_ID = 'LOG_CHANNEL_ID_HERE';
+const LOG_CHANNEL_ID = process.env.LOG_CHANNEL_ID;
 // ──────────────────────────────────────────────────────────────────────────────
 
 // In-memory employee list (user ID → shift)
