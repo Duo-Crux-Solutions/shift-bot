@@ -6,7 +6,7 @@
 const { Client, GatewayIntentBits, PermissionsBitField, SlashCommandBuilder, REST, Routes } = require('discord.js');
 
 // ─── CONFIG — FILL THESE IN ───────────────────────────────────────────────────
-jsconst TOKEN        = process.env.TOKEN;
+const TOKEN = process.env.TOKEN;
 const CLIENT_ID    = process.env.CLIENT_ID;
 const GUILD_ID     = process.env.GUILD_ID;
 const OWNER_ID     = process.env.OWNER_ID;
